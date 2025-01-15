@@ -28,7 +28,8 @@ const SignUpPage: React.FC = () => {
         if (data.status === "success") {
           localStorage.setItem("userId", data.userId);
           localStorage.setItem("userName", username);
-          navigate("/login");
+          navigate("/");
+          window.location.reload();
         } else {
           setErrorMessage("登録に失敗しました。再度お試しください。");
         }

@@ -23,6 +23,7 @@ const LoginPage: React.FC = () => {
           localStorage.setItem("userId", data.userId);
           localStorage.setItem("userName", username);
           navigate("/");
+          window.location.reload();
         } else {
           setErrorMessage("ユーザー名またはパスワードが間違っています。");
         }

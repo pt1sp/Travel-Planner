@@ -260,4 +260,6 @@ button:hover {
 .user-name {
   justify-content: center;
   align-items: center;
+  display: flex;
+  font-size: 25px;
 }
